@@ -6,7 +6,7 @@
 /*   By: liogoh <liogoh@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 17:15:14 by liogoh            #+#    #+#             */
-/*   Updated: 2026/05/04 22:23:45 by liogoh           ###   ########.fr       */
+/*   Updated: 2026/05/12 14:57:20 by liogoh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ int		is_dead(t_philo *philo);
 void	print_death(t_philo *philo);
 int		start_threads(t_data *data);
 int		join_threads(t_data *data);
+void	join_created_threads(t_data *data, int count);
 void	*philo_routine(void *arg);
 void	take_forks(t_philo *philo);
 void	eat(t_philo *philo);
